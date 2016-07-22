@@ -1,0 +1,15 @@
+H:\我的项目\Peace\Peace\bin\Debug\Peace.dll.config
+H:\我的项目\Peace\Peace\bin\Debug\Peace.dll
+H:\我的项目\Peace\Peace\bin\Debug\Peace.pdb
+H:\我的项目\Peace\Peace\obj\Debug\Peace.dll
+H:\我的项目\Peace\Peace\obj\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace\Peace\bin\Debug\Peace.dll.config
+D:\Personal\MyProjects\Peace\Peace\bin\Debug\Peace.dll
+D:\Personal\MyProjects\Peace\Peace\bin\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace\Peace\obj\Debug\Peace.dll
+D:\Personal\MyProjects\Peace\Peace\obj\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace\bin\Debug\Peace.dll
+D:\Personal\MyProjects\Peace - 副本\Peace\bin\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.csprojResolveAssemblyReference.cache
+D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.dll
+D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.pdb

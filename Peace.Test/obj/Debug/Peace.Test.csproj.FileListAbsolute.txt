@@ -1,0 +1,24 @@
+H:\我的项目\Peace\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
+H:\我的项目\Peace\Peace.Test\bin\Debug\Peace.Test.exe.config
+H:\我的项目\Peace\Peace.Test\bin\Debug\Peace.Test.exe
+H:\我的项目\Peace\Peace.Test\bin\Debug\Peace.Test.pdb
+H:\我的项目\Peace\Peace.Test\bin\Debug\Peace.dll
+H:\我的项目\Peace\Peace.Test\bin\Debug\Peace.pdb
+H:\我的项目\Peace\Peace.Test\obj\Debug\Peace.Test.exe
+H:\我的项目\Peace\Peace.Test\obj\Debug\Peace.Test.pdb
+D:\Personal\MyProjects\Peace\Peace.Test\bin\Debug\Peace.Test.exe.config
+D:\Personal\MyProjects\Peace\Peace.Test\bin\Debug\Peace.Test.exe
+D:\Personal\MyProjects\Peace\Peace.Test\bin\Debug\Peace.Test.pdb
+D:\Personal\MyProjects\Peace\Peace.Test\bin\Debug\Peace.dll
+D:\Personal\MyProjects\Peace\Peace.Test\bin\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
+D:\Personal\MyProjects\Peace\Peace.Test\obj\Debug\Peace.Test.exe
+D:\Personal\MyProjects\Peace\Peace.Test\obj\Debug\Peace.Test.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.Test.exe.config
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\obj\Debug\Peace.Test.exe
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\obj\Debug\Peace.Test.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.Test.exe
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.Test.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.dll
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.pdb
+D:\Personal\MyProjects\Peace - 副本\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
