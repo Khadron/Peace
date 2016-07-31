@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AOP\AspectAttribute.cs" />
+    <Compile Include="AOP\DynamicProxyGenerator.cs" />
+    <Compile Include="AOP\DynamicProxySample.cs" />
+    <Compile Include="AOP\IInterceptor.cs" />
+    <Compile Include="AOP\InvokeContext.cs" />
+    <Compile Include="AOP\ProxyFactory.cs" />
     <Compile Include="IoC\Attribute\InjectAttribute.cs" />
     <Compile Include="IoC\Cache.cs" />
     <Compile Include="IoC\Inject\Injecter.cs" />
     <Compile Include="IoC\Inject\InjectResult.cs" />
     <Compile Include="IoC\Kernel\KernelBase.cs" />
-    <Compile Include="IoC\ObjectCreater.cs" />
+    <Compile Include="FastObjectCreater.cs" />
     <Compile Include="IoC\Setting\InjectSetting.cs" />
     <Compile Include="IoC\Kernel\StandardKernel.cs" />
     <Compile Include="IoC\Syntax\IBindingSyntax.cs" />
@@ -56,11 +62,11 @@
     <Compile Include="IoC\Kernel\IKernelConfiguration.cs" />
     <Compile Include="IoC\Syntax\IScopeSyntax.cs" />
     <Compile Include="IoC\Kernel\KernelContext.cs" />
-    <Compile Include="IoC\UnitTest.cs" />
     <Compile Include="IoC\LiftTime.cs" />
     <Compile Include="Configuration\PeaceConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IoC\Kernel\XmlInjectModule.cs" />
+    <Compile Include="UnitTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -124,17 +124,17 @@ namespace Peace.IoC.Inject
                         if (ObjCache.ContainsKey(setting.Bind))
                             return ObjCache[setting.Bind];
 
-                        var instance = ObjectCreater.CreateInstance(type, args);
+                        var instance = FastObjectCreater.CreateInstance(type, args);
                         ObjCache.Add(setting.Bind, instance);
                         return instance;
                     case Lifetime.Transient:
-                        return ObjectCreater.CreateInstance(type, args);
+                        return FastObjectCreater.CreateInstance(type, args);
                     default:
                         throw new NotSupportedException("传入的lifetime不受支持：" + lifetime);
                 }
             }
 
-            return ObjectCreater.CreateInstance(type, args);
+            return FastObjectCreater.CreateInstance(type, args);
         }
 
     }

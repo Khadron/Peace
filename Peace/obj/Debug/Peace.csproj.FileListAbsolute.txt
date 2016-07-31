@@ -13,3 +13,11 @@ D:\Personal\MyProjects\Peace - 副本\Peace\bin\Debug\Peace.pdb
 D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.csprojResolveAssemblyReference.cache
 D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.dll
 D:\Personal\MyProjects\Peace - 副本\Peace\obj\Debug\Peace.pdb
+C:\Users\Qiang Kong\Documents\Peace\Peace\bin\Debug\Peace.dll
+C:\Users\Qiang Kong\Documents\Peace\Peace\bin\Debug\Peace.pdb
+C:\Users\Qiang Kong\Documents\Peace\Peace\obj\Debug\Peace.dll
+C:\Users\Qiang Kong\Documents\Peace\Peace\obj\Debug\Peace.pdb
+E:\Working\Projects\Peace\Peace\bin\Debug\Peace.dll
+E:\Working\Projects\Peace\Peace\bin\Debug\Peace.pdb
+E:\Working\Projects\Peace\Peace\obj\Debug\Peace.dll
+E:\Working\Projects\Peace\Peace\obj\Debug\Peace.pdb
