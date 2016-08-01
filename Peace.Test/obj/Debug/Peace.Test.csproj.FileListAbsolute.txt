@@ -22,14 +22,6 @@ D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.Test.pdb
 D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.dll
 D:\Personal\MyProjects\Peace - 副本\Peace.Test\bin\Debug\Peace.pdb
 D:\Personal\MyProjects\Peace - 副本\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.exe.config
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.exe
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.pdb
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.dll
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.pdb
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.exe
-C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.pdb
 E:\Working\Projects\Peace\Peace.Test\bin\Debug\Peace.Test.exe.config
 E:\Working\Projects\Peace\Peace.Test\bin\Debug\Peace.Test.exe
 E:\Working\Projects\Peace\Peace.Test\bin\Debug\Peace.Test.pdb
@@ -38,3 +30,11 @@ E:\Working\Projects\Peace\Peace.Test\bin\Debug\Peace.pdb
 E:\Working\Projects\Peace\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
 E:\Working\Projects\Peace\Peace.Test\obj\Debug\Peace.Test.exe
 E:\Working\Projects\Peace\Peace.Test\obj\Debug\Peace.Test.pdb
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.exe.config
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.exe
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.Test.pdb
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.dll
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\bin\Debug\Peace.pdb
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.csprojResolveAssemblyReference.cache
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.exe
+C:\Users\Qiang Kong\Documents\Peace\Peace.Test\obj\Debug\Peace.Test.pdb

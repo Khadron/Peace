@@ -58,6 +58,7 @@ namespace Peace.Test
             //}
 
             var test = ProxyFactory.CreateProxy<Test>();
+
             test.Sum(12, 2);
             Console.WriteLine("-------------------");
             test.Show();
@@ -151,7 +152,7 @@ namespace Peace.Test
 
     }
 
-    public class TesttAttribute : AspectAttribute, IInterceptor
+    public class TesttAspect : AspectAttribute, IInterceptor
     {
         public void BeginInvoke(InvokeContext context)
         {
@@ -170,21 +171,21 @@ namespace Peace.Test
     }
 
 
-    [TesttAttribute]
+    [TesttAspect]
     public class Test
     {
-        public int Sum(int i, int j)
+        public virtual int Sum(int i, int j)
         {
             Console.WriteLine("Sum");
             return i + j;
         }
 
-        public void Show()
+        public virtual void Show()
         {
             Console.WriteLine("Show");
         }
 
-        public object Exception()
+        public virtual object Exception()
         {
             int i = 0;
             int r = 1 / i;

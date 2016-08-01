@@ -15,8 +15,10 @@ namespace Peace
             DynamicProxyGenerator dpg = new DynamicProxyGenerator(typeof(Bird));
             var proxy = dpg.CreateProxy();
             var bird = (Bird)FastObjectCreater.CreateInstance(proxy);
-            // bird.Fly("大雁");
-            //bird.Sum();
+            //bird.Fly("大雁");
+            //bird.GetWingCount();
+            //bird.Show();
+            bird.Sum(12, 1);
 
             //var dd = new DynamicProxySample();
             //dd.ShowMessage("ddd");
@@ -215,7 +217,27 @@ namespace Peace
 
             public virtual int GetWingCount()
             {
+                int i = 0;
+                int r = 1 / i;
                 return 2;
+            }
+
+            public virtual int Sum(int i, int j)
+            {
+                Console.WriteLine("Sum");
+                return i + j;
+            }
+
+            public virtual void Show()
+            {
+                Console.WriteLine("Show");
+            }
+
+            public virtual object Exception()
+            {
+                int i = 0;
+                int r = 1 / i;
+                return null;
             }
         }
 
@@ -223,6 +245,9 @@ namespace Peace
         {
             void Fly(string name);
             int GetWingCount();
+            int Sum(int i, int j);
+            void Show();
+            object Exception();
         }
 
     }
