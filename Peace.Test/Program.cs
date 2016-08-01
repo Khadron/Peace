@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Peace.AOP;
 using Peace.IoC.Attribute;
 using Peace.IoC.Kernel;
+using Peace.LRU;
 
 namespace Peace.Test
 {
@@ -57,18 +58,34 @@ namespace Peace.Test
             //    proxy.AddUser(users[0]);
             //}
 
-            var test = ProxyFactory.CreateProxy<Test>();
+            //var test = ProxyFactory.CreateProxy<Test>();
 
-            test.Sum(12, 2);
-            Console.WriteLine("-------------------");
-            test.Show();
-            Console.WriteLine("-------------------");
-            test.Exception();
+            //test.Sum(12, 2);
+            //Console.WriteLine("-------------------");
+            //test.Show();
+            //Console.WriteLine("-------------------");
+            //test.Exception();
 
             #endregion
 
             //var a = typeof(Test).GetCustomAttributes(typeof(ParentAttribute), false);
 
+            #region LRU
+            LRUCache<long, Data> cache = new LRUCache<long, Data>();
+
+            for (int i = 0; i < 1000000; i++)
+            {
+                cache.Put(i, new Data(i));
+            }
+
+
+            for (int i = 0; i < 1000000; i++)
+            {
+                var data = cache.Get(i);
+                Console.WriteLine(data.Index);
+            }
+
+            #endregion
 
             Console.ReadKey();
         }
@@ -146,10 +163,6 @@ namespace Peace.Test
         }
 
         #endregion
-
-
-
-
     }
 
     public class TesttAspect : AspectAttribute, IInterceptor
@@ -190,6 +203,16 @@ namespace Peace.Test
             int i = 0;
             int r = 1 / i;
             return null;
+        }
+    }
+
+    public class Data
+    {
+        public int Index { get; set; }
+
+        public Data(int index)
+        {
+            Index = index;
         }
     }
 }
