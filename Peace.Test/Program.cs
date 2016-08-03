@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Peace.AOP;
 using Peace.IoC.Attribute;
 using Peace.IoC.Kernel;
+using Peace.LoadBalance;
 using Peace.LRU;
 
 namespace Peace.Test
