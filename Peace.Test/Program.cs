@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Peace.AOP;
 using Peace.IoC.Attribute;
@@ -71,21 +72,54 @@ namespace Peace.Test
             //var a = typeof(Test).GetCustomAttributes(typeof(ParentAttribute), false);
 
             #region LRU
-            LRUCache<long, Data> cache = new LRUCache<long, Data>();
+            //LRUCache<long, Data> cache = new LRUCache<long, Data>();
 
-            for (int i = 0; i < 1000000; i++)
+            //for (int i = 0; i < 1000000; i++)
+            //{
+            //    cache.Put(i, new Data(i));
+            //}
+
+
+            //for (int i = 0; i < 1000000; i++)
+            //{
+            //    var data = cache.Get(i);
+            //    Console.WriteLine(data.Index);
+            //}
+
+            #endregion
+
+
+            #region LoadBalance
+
+            WeightedRoundRobinLoadBalancer.Instance.Init(new List<Server>()
             {
-                cache.Put(i, new Data(i));
+                new Server{ServerName = "192.168.131.12",Version = "v1",Weight = 2,Isolated = false},
+                new Server{ServerName = "192.168.131.6",Version = "v1",Weight = 6,Isolated = false},
+                new Server{ServerName = "192.168.131.76",Version = "v1",Weight = 10,Isolated = false},
+                new Server{ServerName = "192.168.131.88",Version = "v1",Weight = 8,Isolated = false},
+
+            });
+
+            List<Thread> threads = new List<Thread>();
+            for (int i = 0; i < 100; i++)
+            {
+                Thread thread = new Thread(() =>
+                {
+
+                    var s = WeightedRoundRobinLoadBalancer.Instance.ChooseServer();
+                    Console.WriteLine("服务器：{0}", s.ServerName);
+                });
+                threads.Add(thread);
             }
 
-
-            for (int i = 0; i < 1000000; i++)
+            foreach (var thread in threads)
             {
-                var data = cache.Get(i);
-                Console.WriteLine(data.Index);
+                thread.Start();
+                Thread.Sleep(50);
             }
 
             #endregion
+
 
             Console.ReadKey();
         }
@@ -163,6 +197,9 @@ namespace Peace.Test
         }
 
         #endregion
+
+
+
     }
 
     public class TesttAspect : AspectAttribute, IInterceptor
@@ -215,4 +252,7 @@ namespace Peace.Test
             Index = index;
         }
     }
+
+
+
 }
