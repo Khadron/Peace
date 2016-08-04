@@ -66,6 +66,7 @@
     <Compile Include="Configuration\PeaceConfiguration.cs" />
     <Compile Include="LoadBalance\LoadBalancer.cs" />
     <Compile Include="LRU\LRUCache.cs" />
+    <Compile Include="Message Queue\MQ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IoC\Kernel\XmlInjectModule.cs" />
     <Compile Include="UnitTest.cs" />
