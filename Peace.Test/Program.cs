@@ -92,45 +92,42 @@ namespace Peace.Test
 
             #region LoadBalance
 
-            //WeightedRoundRobinLoadBalancer.Instance.Init(new List<Server>()
-            //{
-            //    new Server{ServerName = "192.168.131.12",Version = "v1",Weight = 2,Isolated = false},
-            //    new Server{ServerName = "192.168.131.6",Version = "v1",Weight = 6,Isolated = false},
-            //    new Server{ServerName = "192.168.131.76",Version = "v1",Weight = 10,Isolated = false},
-            //    new Server{ServerName = "192.168.131.88",Version = "v1",Weight = 8,Isolated = false},
+            WeightedRoundRobinLoadBalancer.Instance.Init(new List<Server>()
+            {
+                new Server{ServerName = "192.168.131.12",Version = "v1",Weight = 3,Isolated = false},
+                new Server{ServerName = "192.168.131.6",Version = "v1",Weight = 5,Isolated = false},
+                new Server{ServerName = "192.168.131.76",Version = "v1",Weight = 12,Isolated = false},
+                new Server{ServerName = "192.168.131.88",Version = "v1",Weight = 8,Isolated = false},
 
-            //});
+            });
 
-            //List<Thread> threads = new List<Thread>();
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    Thread thread = new Thread(() =>
-            //    {
+            List<Thread> threads = new List<Thread>();
+            for (int i = 0; i < 100; i++)
+            {
+                Thread thread = new Thread(() =>
+                {
 
-            //        var s = WeightedRoundRobinLoadBalancer.Instance.ChooseServer();
-            //        Console.WriteLine("服务器：{0}", s.ServerName);
-            //    });
-            //    threads.Add(thread);
-            //}
+                    var s = WeightedRoundRobinLoadBalancer.Instance.ChooseServer();
+                    Console.WriteLine("服务器：{0}", s.ServerName);
+                });
+                threads.Add(thread);
+            }
 
-            //foreach (var thread in threads)
-            //{
-            //    thread.Start();
-            //    Thread.Sleep(50);
-            //}
+            foreach (var thread in threads)
+            {
+                thread.Start();
+                Thread.Sleep(50);
+            }
 
             #endregion
 
             #region MessageQueue
 
-
-
-            ReceiveServer server = new ReceiveServer();
-            MessageQueueManager.Manager.MessageNotifyEvent += server.Process;
-            MessageQueueManager.Manager.Load(server.Publish());
-            MessageQueueManager.Manager.Start();
-            Console.WriteLine(MessageQueueManager.Manager.Count);
-
+            //ReceiveServer server = new ReceiveServer();
+            //MessageQueueManager.Manager.MessageNotifyEvent += server.Process;
+            //MessageQueueManager.Manager.Load(server.Publish());
+            //MessageQueueManager.Manager.Start();
+            //Console.WriteLine(MessageQueueManager.Manager.Count);
 
             #endregion
 

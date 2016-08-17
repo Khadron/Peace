@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Peace.LoadBalance
@@ -181,9 +182,11 @@ namespace Peace.LoadBalance
             lock (Locker)
             {
                 int index = 0;
-                while (index < _cycle && result == null)
+                while (index < _cycle && result == null) 
                 {
-                    _currentIndex = (_currentIndex + 1) % _rrList.Count;
+                    _currentIndex = (_currentIndex + 1) % _rrList.Count;//循环周期
+                    //int i=_currentIndex + 1
+                    //Debug.WriteLine(@"({0})%{1}={2}",i,_rrList.Count,_currentIndex);
                     result = base[_rrList[_currentIndex]];
 
                     if (!result.Isolated)
@@ -213,7 +216,10 @@ namespace Peace.LoadBalance
             {
                 while (true)
                 {
-                    index = (index + 1) % Servers.Count;//服务器下标
+                    //index = (index + 1) % Servers.Count;//服务器下标
+                    int k = index + 1;
+                    index = k%Servers.Count;
+                    Debug.WriteLine(@"({0})%{1}={2};{3}", k, Servers.Count, index,weight);
                     if (index == 0)
                     {
                         weight = weight - gcd;//获得处理的权重
@@ -226,6 +232,7 @@ namespace Peace.LoadBalance
                     var server = Servers[index];
                     if (server.Weight >= weight)//当前权重大于上次权重
                     {
+                        //Debug.WriteLine(server.ServerName);
                         _rrList.Add(server.ServerName);
                         break;
                     }
